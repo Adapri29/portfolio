@@ -7,6 +7,11 @@ function App() {
     <>
       
       <AboutMe />
+
+      <div className="skills">
+        <h1>Habilidades</h1>
+
+      </div>
     
     </>
   )
