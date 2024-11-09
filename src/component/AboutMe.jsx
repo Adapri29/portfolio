@@ -1,9 +1,6 @@
 import "../styles/AboutMe.css"
 import photo from "../assets/photo.jpeg"
-
-const openPDF = () => {
-    window.open('/public/Curriculum.pdf', '_blank');
-};
+import { Contact } from "./Contact";
 
 
 export const AboutMe = () => {
@@ -16,7 +13,6 @@ export const AboutMe = () => {
                     src={photo}
                     alt="Alberto Adamuz Priego"
                 />
-                <button onClick={openPDF}>Descargar CV</button>
             </div>
             <div className="info-container-right">
                 <h1>Adapri</h1>
@@ -30,14 +26,8 @@ export const AboutMe = () => {
                 Busco aprender, colaborar y crecer en cada proyecto, 
                 explorando oportunidades para aportar y evolucionar continuamente.
             </p>
-            <div className="contact">
-                <a href="https://github.com/Adapri29" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></img>
-                </a>
-                <a href="https://www.linkedin.com/in/alberto-adamuz-priego-9b01b3276/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://www.freeiconspng.com/uploads/linkedin-icon-1.png" alt="linkedIn"></img>
-                </a>
-            </div>
+
+            <Contact />
         
         </div>
     )

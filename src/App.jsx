@@ -1,20 +1,15 @@
 import { AboutMe } from "./component/AboutMe"
+import { Skills } from "./component/Skills"
 
 function App() {
 
 
   return (
     <>
-      
       <AboutMe />
-
-      <div className="skills">
-        <h1>Habilidades</h1>
-
-      </div>
-    
+      <Skills />
     </>
-  )
+  );
 }
 
 export default App

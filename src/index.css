@@ -7,16 +7,22 @@
 
 /* Centrado en la pantalla */
 body, html {
-  height: 100%;
-  /* min-width: 70%; */
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
   font-family: 'Manga-font';
   text-align: center;
   background-color: #f4f4f4;
   font-size: 25px;
+  height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  display: flex; /* Usamos flexbox para centrar contenido */
+  flex-direction: column; /* Apilamos las secciones de arriba a abajo */
+  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: flex-start; /* Coloca los elementos en la parte superior */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
+#root{
+  width: 100%;
+}
 

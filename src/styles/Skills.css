@@ -1,0 +1,74 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box; /* Asegura que el padding se cuente dentro del tamaño total */
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    overflow: hidden; /* Evita el desbordamiento dentro de la sección */
+    margin: 0; /* Asegura que no haya márgenes externos */
+    padding-right: 0;
+   
+}
+
+
+.polygon-container {  
+    height: 100%; /* Ocupa el 100% de la altura de .skills */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    padding-right: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transform: translateX(-20vw); /* Mueve el contenedor 5vw a la izquierda */
+} 
+
+.polygon {
+    background-color: #f4f4f4; /* Fondo claro */
+    position: relative;
+    width: 100%; /* El panel ocupa todo el ancho disponible */
+    height: 100%; /* El panel ocupa toda la altura del contenedor */
+    padding: 20px; /* Espaciado interno para que el contenido no toque los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño total */
+    display: flex; /* Usamos flexbox para alinear contenido dentro del panel */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 20px;
+    /* max-width: 1200px; */
+  
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1200px;
+    margin: 0px;
+    padding: 20px;
+    gap: 10px
+}
+
+img {
+    max-width: 100px;
+}
+
+li{
+    border-color: black;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
