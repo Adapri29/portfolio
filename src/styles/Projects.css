@@ -1,0 +1,8 @@
+.projects{
+    border: 3px solid black;
+  }
+  
+  .projects h2{
+    font-size: 35px;
+    margin: 5px;
+  }

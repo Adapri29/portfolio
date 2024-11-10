@@ -4,8 +4,8 @@ import '../styles/Skills.css'
 export const Skills = () => {
 
     return (      
-        <div className="skills">
-            <h2>Habilidades</h2>
+        <section className="skills">
+            <h2>Tecnologías</h2>
             <ul>
               <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" /></li>
               <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" /></li>
@@ -16,6 +16,6 @@ export const Skills = () => {
               <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png" /></li>
               <li><img src="https://res.cloudinary.com/dtbpucouh/image/upload/v1676917917/MySQL-Logo_slj0o5.png" /></li>
             </ul>
-        </div>
+        </section>
     )
 }

@@ -1,22 +1,27 @@
 import "../styles/Experience.css"
+import { ExperienceCard } from "./ExperienceCard"
 
 export const Experience = () => {
   return (
-    <div className="experience">
+    <section className="experience">
         <h2>Experiencia</h2>
         <ul>
             <li>
-                <h3>Fundación CETEMET</h3>
-                <h4>Ingeniero Informático I+D+i</h4>
-                <p>jun. 2023 - Actual</p>
-                <p>Córdoba, España</p>
-                <p>
-                Ingeniero Informático encargado del desarrollo 
-                y la implementación de proyectos tecnológicos multidisciplinarios, 
-                incluyendo inteligencia artificial, aplicaciones web y móviles, y experiencias de realidad virtual.
-                </p>
+              <ExperienceCard 
+                company="Fundación CETEMET"
+                role="Ingeniero Informático I+D+i"
+                startTime="2023-06"
+                endTime="Actual"
+                location= {{
+                  city: "Córdoba",
+                  country: "España",
+                }}
+                description="Ingeniero Informático encargado del desarrollo 
+                            y la implementación de proyectos tecnológicos multidisciplinarios, 
+                            incluyendo inteligencia artificial, aplicaciones web y móviles, y experiencias de realidad virtual."
+              />
             </li>
         </ul>
-    </div>
+    </section>
   )
 }

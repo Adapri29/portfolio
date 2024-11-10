@@ -1,15 +1,15 @@
-.experience {
-    border: 3px solid black;
-    height: auto;
-    padding: 10px;
+.education {
+  border: 3px solid black;
+  height: auto;
+  padding: 10px;
 }
 
-.experience h2 {
+.education h2 {
 font-size: 35px;
 margin: 5px;
 }
 
-.experience ul{
+.education ul{
 padding: 0;
 display: flex;
 flex-direction: column;
@@ -17,28 +17,28 @@ padding: 10px;
 margin: 0;
 }
 
-.experience ul li{
+.education ul li{
 display: flex;
 flex-direction: column;
 text-align: left;
 border: 2px solid black;
 padding: 5px;
 }
-.experience ul li::marker {
+.education ul li::marker {
 font-size: 10px; /* Cambia el tamaño del punto */
 }
 
-.experience ul li h3 {
+.education ul li h3 {
 font-size: 25px;
 margin: 0;
 }
 
-.experience ul li h4 {
+.education ul li h4 {
 font-size: 23px;
 margin: 0;
 }
 
-.experience ul li p {
+.education ul li p {
 font-size: 20px;
 margin: 0;
 }

@@ -33,4 +33,6 @@
 
 .about p{
   font-size: 20px;
+  width: 60%;
+  text-align: left;
 }

@@ -6,7 +6,7 @@ import { Contact } from "./Contact";
 export const AboutMe = () => {
 
     return (
-        <div className="about">
+        <section className="about">
             <div className="header">
                 <img
                         src={photo}
@@ -27,6 +27,6 @@ export const AboutMe = () => {
                     explorando oportunidades para aportar y evolucionar continuamente.
             </p>
 
-        </div>
+        </section>
     )
 }
