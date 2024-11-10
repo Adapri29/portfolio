@@ -6,29 +6,27 @@ import { Contact } from "./Contact";
 export const AboutMe = () => {
 
     return (
-        <div className="about-me">
-            <div className="info-container">
-            <div className="info-container-left">
+        <div className="about">
+            <div className="header">
                 <img
-                    src={photo}
-                    alt="Alberto Adamuz Priego"
+                        src={photo}
+                        alt="Alberto Adamuz Priego"
                 />
-            </div>
-            <div className="info-container-right">
+                <div>
+
                 <h1>Adapri</h1>
                 <h2>Alberto Adamuz Priego</h2>
-                <p>adapri29@gmail.com</p>
+        
+                </div>
             </div>
-            </div>
+
             <p>
-                Ingeniero informático, 
-                curioso y abierto a nuevos desafíos. 
-                Busco aprender, colaborar y crecer en cada proyecto, 
-                explorando oportunidades para aportar y evolucionar continuamente.
+                    Ingeniero informático, 
+                    curioso y abierto a nuevos desafíos. 
+                    Busco aprender, colaborar y crecer en cada proyecto, 
+                    explorando oportunidades para aportar y evolucionar continuamente.
             </p>
 
-            <Contact />
-        
         </div>
     )
 }

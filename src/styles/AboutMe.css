@@ -1,82 +1,36 @@
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
-    width: 100%;
-    padding: 50px;
-    box-sizing: border-box; /* Asegura que el padding se cuente dentro del tamaño total */
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
-    overflow: hidden; /* Evita el desbordamiento dentro de la sección */
-    margin: 0; /* Asegura que no haya márgenes externos */
- 
-  }
-  
-  .info-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    justify-content: center;
-  }
+.about {
+  border: 3px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-   .info-container-left{
-    padding: 10px;
-  }
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: left;
+}
 
-  .info-container-right{
-    padding: 10px;
-  }
-  
-  .info-container img {
-    max-height: 200px;
-    max-height: 200px;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .info-container div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .about-me h1 {
-    font-size: 2em;
-    margin: 0;
-  }
-  
-  .about-me h2 {
-    font-size: 1.2em;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  .about-me p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-    max-width: 600px;
-    text-align: justify;
-    margin: 0px;
-  }
-  
-  button {
-    font-family: 'Manga-font', sans-serif;
-    width: 130px;
-  }
+.about img {
+  max-height: 100px;
+  max-height: 100px;
+  height: auto;
+  border-radius: 20%;
+}
 
-  .contact{
-    display: flex;
-    gap:50px;
-    margin: 30px;
-    padding: 0px;
-  }
+.about h1{
+  font-size: 35px;
+  margin: 0;
+}
 
-  .contact img {
-    width: 30px; /* ajusta a la medida que prefieras */
-    height: 30px; /* ajusta a la medida que prefieras */
-    object-fit: contain; /* opcional: mantiene proporciones */
-  }
-  
+.about h2{
+  font-size: 30px;
+  margin: 0;
+}
+
+.about p{
+  font-size: 20px;
+}

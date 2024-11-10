@@ -1,14 +1,20 @@
-import { AboutMe } from "./component/AboutMe"
-import { Skills } from "./component/Skills"
+import photo from "./assets/photo.jpeg"
+import { AboutMe } from "./component/AboutMe";
+import { Experience } from "./component/Experience";
+import { Skills } from "./component/Skills";
 
 function App() {
 
 
   return (
-    <>
-      <AboutMe />
-      <Skills />
-    </>
+    <div className="app"> 
+        <AboutMe />
+        <div className="container"> 
+          <Skills />
+          <Experience />
+        </div>
+
+    </div>
   );
 }
 

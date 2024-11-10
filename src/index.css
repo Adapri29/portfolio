@@ -22,7 +22,15 @@ body, html {
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
-#root{
-  width: 100%;
+.app {
+  margin: 20px;
+  min-height: 90vh;
+  width: 60vw;
+}
+
+.app .container {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
 }
 
