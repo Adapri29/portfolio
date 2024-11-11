@@ -22,30 +22,50 @@ body, html {
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
-.app {
-  margin: 20px;
-  min-height: 90vh;
-  width: 60vw;
+.app{
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+  gap: 10px; /* Espacio entre elementos */
+  padding: 50px;
 }
 
-.container {
-  display: flex;
-  gap: 10px;
-  align-items: stretch;
+section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
 }
 
-.container-left {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  gap: 10px;
+.about {
+  grid-column: 1 / 6; /* Ocupa todas las columnas */
+  grid-row: 1 / 2;    /* Primera fila */
 }
 
-.container-right {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  gap: 10px;
+.skills {
+  grid-column: 1 / 4; /* Ocupa las primeras 3 columnas */
+  grid-row: 2 / 3;    /* Segunda fila */
 }
+
+.experience {
+  grid-column: 4 / 6; /* Ocupa todas las columnas */
+  grid-row: 2 / 4;    /* Tercera fila */
+}
+
+.projects {
+  grid-column: 1 / 4; /* Ocupa las columnas restantes */
+  grid-row: 3 / 6;    /* Segunda fila */
+}
+
+.education {
+  grid-column: 4 / 6; /* Ocupa todas las columnas */
+  grid-row: 4 / 6;    /* Cuarta fila */
+}
+
+.contact{
+  grid-column: 1 / 6; /* Ocupa todas las columnas */
+  grid-row: 6 / 7;    /* Quinta fila */
+}
+

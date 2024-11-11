@@ -1,5 +1,6 @@
 import photo from "./assets/photo.jpeg"
 import { AboutMe } from "./component/AboutMe";
+import { Contact } from "./component/Contact";
 import { Education } from "./component/Education";
 import { Experience } from "./component/Experience";
 import { Projects } from "./component/Projects";
@@ -10,22 +11,12 @@ function App() {
 
   return (
     <div className="app"> 
-        <AboutMe />
-        <div className="container"> 
-          <div className="container-left">
-            <Skills />
-            <Projects />
-          </div>
-          <div className="container-right">
-            <Experience />
-            <Education />
-          </div>
-          
-          
-        </div>
-
-        
-
+        <AboutMe/>
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Contact />
     </div>
   );
 }

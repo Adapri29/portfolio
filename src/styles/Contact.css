@@ -1,0 +1,22 @@
+.contact{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    height: fit-content;
+}
+
+
+.contact img{
+    height: 25px;
+}
