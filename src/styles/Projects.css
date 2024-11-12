@@ -1,72 +1,91 @@
-.projects{
-  border: 3px solid black;
+.projects {
+  grid-column: 1 / 4; /* Ocupa las columnas restantes */
+  grid-row: 3 / 6; /* Fila donde quieres que aparezca */
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+
+.projects h2 {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #ff5252; /* Rojo suave */
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Coloca las tarjetas una debajo de la otra */
+  gap: 1.5rem; /* Espacio entre cada tarjeta */
+}
+
+.projects li {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo de la tarjeta */
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+  max-width: 600px;
+  margin: 0 auto; /* Centra las tarjetas */
+}
+
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.projects h2{
-  font-size: 35px;
-  margin: 5px;
-}
-
-.projects ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column; /* Alinea los elementos de la lista en una columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
+.card-image{
   width: 100%;
-  padding: 0;
 }
 
-.projects li{
-  padding: 10px;
-  margin: 5px 0; /* Espacio entre los elementos de la lista */
-  text-align: center; /* Alinea el texto al centro */
+.card-image img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  max-height: 200px; /* Limita la altura máxima */
+  object-fit: cover; /* Asegura que la imagen no se deforme y cubra todo el espacio disponible */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
-.project-card{
-  margin-top: 5px;
-  border: 2px solid black;
+.card-content {
+  padding: 1rem;
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.card-content{
+.card-title {
+  font-size: 1.2rem; /* Reduce el tamaño del título */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem; /* Reduce el tamaño de la descripción */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.card-footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card-image img{
-  max-width: 100%;  
+.card-tags img {
+  width: 25px; /* Ajusta el tamaño de los iconos de tecnología */
+  height: 25px;
+  margin-right: 10px;
 }
 
-.card-content h3 {
-  margin: 5px;
+.card-links a {
+  font-size: 0.8rem; /* Reduce el tamaño del texto en los enlaces */
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
-.card-content p{
-  margin: 5px;
-}
-
-.card-footer{
-  display: flex;
-  margin: 10px;
-  padding: 5px;
-  justify-content: center;
-  gap:20px
-}
-
-.card-tags{
-  max-height: 50px;
-  display: flex;;
-  width: 65%;
-  gap: 10px
-}
-
-.card-tags img{
-   max-height: 20px;
-}
-
-.card-links{
-  display: flex;
+.card-links a:hover {
+  text-decoration: underline;
 }

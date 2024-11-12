@@ -6,7 +6,7 @@ export const Projects = () => {
     <section className="projects">
         <h2>Proyectos</h2>
         <ul>
-            <li>
+            <li key="1">
                 <ProjectCard 
                   title="BioTerraBot"
                   description= "Robotización para el control de cubiertas vegetales en cultivos ecológicos."
@@ -18,7 +18,7 @@ export const Projects = () => {
                   infoURL="https://bioterrabot.ecovalia.org/"
                 />
             </li>
-            <li>
+            <li key="2">
                 <ProjectCard 
                   title="SIAPEMAD"
                   description= "Sistema inteligente para atención de personas mayores y dependientes."

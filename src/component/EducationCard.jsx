@@ -1,16 +1,14 @@
 
 
-export const EducationCard = ({title, subtitle, institution, location, startTime, endTime}) => {
+export const EducationCard = ({title, image, institution, startTime, endTime}) => {
   return (
     <article>
-        <h3>{title}</h3>
-        {subtitle && <h4>{subtitle}</h4>}
-        <p>{institution}</p>
-        <p>{location.city}, {location.country}</p>
-        <p>
-        <time>{startTime}</time> - 
-        <time>{endTime}</time>
-        </p>
+      <img src={image} alt={institution}/>
+      <div>
+          <h3>{institution}</h3>
+          <p>{title}</p>
+          <p><time>{startTime} - {endTime}</time></p>  
+      </div>
     </article>  
   )
 }

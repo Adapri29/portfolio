@@ -1,32 +1,52 @@
-.skills{
-    border: 3px solid black;
-    padding: 10px;
-  } 
-
-.skills h2{
-    font-size: 35px;
-    margin: 5px;
-}
-
-.skills ul {
-    width: 100%;
+.skills {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+    overflow: hidden;
+    max-height: 150px;
+    margin-right: 0.5em;
+  }
+  
+  .skills h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ff5252; /* Rojo suave */
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .skills ul {
+    display: flex;
+    justify-content: space-evenly; /* Alineación de las imágenes de manera más uniforme */
+    align-items: center;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0px;
-    padding: 0px;
-    row-gap: 10px;
-
-}
-
-.skills ul li{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
-}
-
-.skills img {
-    max-height: 50px;
-    max-width: 50px;
-}           
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .skills ul li img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 1; /* Imágenes totalmente visibles */
+  }
+  
+  /* Efecto de hover */
+  .skills ul li:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+  }
+  

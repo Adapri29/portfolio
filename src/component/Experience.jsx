@@ -9,13 +9,10 @@ export const Experience = () => {
             <li>
               <ExperienceCard 
                 company="Fundación CETEMET"
+                image="https://www.railwayinnovationhub.com/wp-content/uploads/2019/05/CETEMET-logo-web.png"
                 role="Ingeniero Informático I+D+i"
                 startTime="2023-06"
                 endTime="Actual"
-                location= {{
-                  city: "Córdoba",
-                  country: "España",
-                }}
                 description="Ingeniero Informático encargado del desarrollo 
                             y la implementación de proyectos tecnológicos multidisciplinarios, 
                             incluyendo inteligencia artificial, aplicaciones web y móviles, y experiencias de realidad virtual."
