@@ -19,6 +19,7 @@ export const Experience = () => {
                             incluyendo inteligencia artificial, aplicaciones web y móviles, y experiencias de realidad virtual."
               />
             </li>
+          
             <hr/>
         </ul>
     </section>

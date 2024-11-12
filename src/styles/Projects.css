@@ -35,17 +35,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid transparent; /* Espacio para el borde */
+  border-radius: 8px; /* Redondea las esquinas si quieres */
+  padding: 10px;
+  background: linear-gradient(
+        to right,
+        rgba(219, 76, 76, 0.8),  /* Rojo claro moderado */
+        rgba(184, 57, 57, 0.9),  /* Rojo intenso */
+        rgba(229, 79, 79, 0.8)   /* Rojo claro moderado */
+    );
+  background-origin: border-box; /* Hace que el degradado siga el borde */
+  background-clip: padding-box, border-box; /* Separa el degradado del fondo interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra */
 }
+
+.project-card-content{
+  background-color: #222; /* Fondo interior */
+  border-radius: 6px; /* Redondeado para coincidir con el borde exterior */
+}
+
 .card-image{
   width: 100%;
 }
 
 .card-image img {
   width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción original de la imagen */
-  max-height: 200px; /* Limita la altura máxima */
-  object-fit: cover; /* Asegura que la imagen no se deforme y cubra todo el espacio disponible */
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 6px 6px 0 0; 
 }
 
 .card-content {
@@ -81,6 +96,7 @@
   font-size: 0.8rem; /* Reduce el tamaño del texto en los enlaces */
   text-decoration: none;
   margin-left: 1rem;
+  color: rgb(235,74,74);
 }
 
 .card-links a:hover {
