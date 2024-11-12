@@ -5,6 +5,7 @@ export const Education = () => {
   return (
     <section className="education">
         <h2>Educación</h2>
+        <hr/>
         <ul>
           <li>
             <EducationCard 
@@ -15,6 +16,7 @@ export const Education = () => {
               endTime="2023-06"
             />         
           </li>
+          <hr/>
         </ul>
     </section>
   )

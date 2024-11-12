@@ -9,7 +9,6 @@
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #ff5252; /* Rojo suave */
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
@@ -25,7 +24,6 @@
 .projects li {
   display: flex;
   flex-direction: column; /* Alinea los elementos verticalmente */
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo de la tarjeta */
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
@@ -81,7 +79,6 @@
 
 .card-links a {
   font-size: 0.8rem; /* Reduce el tamaño del texto en los enlaces */
-  color: #fff;
   text-decoration: none;
   margin-left: 1rem;
 }

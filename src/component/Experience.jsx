@@ -5,6 +5,7 @@ export const Experience = () => {
   return (
     <section className="experience">
         <h2>Experiencia</h2>
+        <hr/>
         <ul>
             <li>
               <ExperienceCard 
@@ -18,6 +19,7 @@ export const Experience = () => {
                             incluyendo inteligencia artificial, aplicaciones web y móviles, y experiencias de realidad virtual."
               />
             </li>
+            <hr/>
         </ul>
     </section>
   )

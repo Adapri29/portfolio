@@ -1,5 +1,5 @@
 import "../styles/AboutMe.css"
-import photo from "../assets/photo.jpeg"
+import photo from "../assets/photo.png"
 import { Contact } from "./Contact";
 
 
