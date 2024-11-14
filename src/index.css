@@ -12,6 +12,7 @@ body, html {
   font-family: Arial, sans-serif;
   text-align: center;
   color: #FFFFFF; /* Texto blanco */
+  background: #131313;
   height: auto; /* Asegura que el body ocupe todo el alto de la pantalla */
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   display: flex; /* Usamos flexbox para centrar contenido */
@@ -26,21 +27,21 @@ body, html {
   position: relative;
   overflow: hidden;
 }
-
+/* 
 .background {
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Ajuste para asegurarse de que cubre toda la ventana */
+  width: 100vw; 
   height: 100vh;
-  background-image: url('https://media.giphy.com/media/mqtPFS4fEW092wPa9b/giphy.gif?cid=ecf05e47ez4vzcixz992y5gvmhbfefmtv2x6e644qyjhxgr5&ep=v1_gifs_related&rid=giphy.gif&ct=g'); /* URL del GIF */
+  background-image: url('https://media.giphy.com/media/mqtPFS4fEW092wPa9b/giphy.gif?cid=ecf05e47ez4vzcixz992y5gvmhbfefmtv2x6e644qyjhxgr5&ep=v1_gifs_related&rid=giphy.gif&ct=g'); 
   background-repeat:repeat;
   background-size: cover;
-  filter: blur(5px); /* Ajusta el nivel de desenfoque */
-  z-index: -1; /* Envía el fondo detrás del contenido */
-}
+  filter: blur(5px); 
+  z-index: -1; 
+} */
 
 .content{
   position: relative;
@@ -50,7 +51,7 @@ body, html {
   grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
   grid-template-rows: auto 0.5fr 1fr 1fr 1fr 0.5fr;
   padding: 50px;
-  background-color: rgb(21,21,21); /* Fondo negro */
+  background-color: rgba(0, 0, 0, 0.368); /* Fondo negro */
 }
 
 .about, .skills, .experience, .projects, .education, .contact {
@@ -76,7 +77,7 @@ body, html {
 
 .about:hover, .skills:hover, .experience:hover, .projects:hover, .education:hover, .contact:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra más fuerte al hacer hover */
-  border: 4px solid rgb(235,74,74);
+  border: 2px solid rgb(235,74,74);
   transform: scale(1.05); /* Aumenta ligeramente el tamaño de la sección */
 }
 

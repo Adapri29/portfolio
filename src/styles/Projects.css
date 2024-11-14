@@ -36,17 +36,10 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid transparent; /* Espacio para el borde */
-  border-radius: 8px; /* Redondea las esquinas si quieres */
-  padding: 10px;
-  background: linear-gradient(
-        to right,
-        rgba(219, 76, 76, 0.8),  /* Rojo claro moderado */
-        rgba(184, 57, 57, 0.9),  /* Rojo intenso */
-        rgba(229, 79, 79, 0.8)   /* Rojo claro moderado */
-    );
-  background-origin: border-box; /* Hace que el degradado siga el borde */
-  background-clip: padding-box, border-box; /* Separa el degradado del fondo interno */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra */
+  border-radius: 8px; /* Redondea las esquinas */
+  border: 2px solid #c9c9c9ad;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .project-card-content{

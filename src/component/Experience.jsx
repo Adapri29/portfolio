@@ -12,7 +12,7 @@ export const Experience = () => {
                 company="Fundación CETEMET"
                 image="https://www.railwayinnovationhub.com/wp-content/uploads/2019/05/CETEMET-logo-web.png"
                 role="Ingeniero Informático I+D+i"
-                startTime="2023-06"
+                startTime="2023-03"
                 endTime="Actual"
                 description="Ingeniero Informático encargado del desarrollo 
                             y la implementación de proyectos tecnológicos multidisciplinarios, 

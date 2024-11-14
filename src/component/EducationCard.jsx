@@ -6,7 +6,7 @@ export const EducationCard = ({title, image, institution, startTime, endTime}) =
       <img src={image} alt={institution}/>
       <div>
           <h3>{institution}</h3>
-          <p>{title}</p>
+          <h4>{title}</h4>
           <p><time>{startTime} - {endTime}</time></p>  
       </div>
     </article>  

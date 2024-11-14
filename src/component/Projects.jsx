@@ -5,6 +5,7 @@ export const Projects = () => {
   return (
     <section className="projects">
         <h2>Proyectos</h2>
+        <hr/>
         <ul>
             <li key="1">
                 <ProjectCard 
