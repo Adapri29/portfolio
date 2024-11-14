@@ -12,12 +12,12 @@ function App() {
     <div className="app"> 
       <div className="background"></div>
       <div className="content">
-          <AboutMe/>
+          {/* <AboutMe/>
           <Skills />
           <Projects />
           <Experience />
           <Education />
-          <Contact />
+          <Contact /> */}
       </div>
     </div>
   );
