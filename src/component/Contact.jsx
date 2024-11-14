@@ -1,5 +1,5 @@
 import "../styles/Contact.css"
-import 'boxicons'
+
 export const Contact = () => {
   return (
     <footer className="contact">
@@ -19,7 +19,7 @@ export const Contact = () => {
             </a> 
         </div>
 
-        <a className="cv-button" href="/Curriculum.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+        {/* <a className="cv-button" href="/Curriculum.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a> */}
         
     </footer>
   )

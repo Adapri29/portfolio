@@ -1,5 +1,5 @@
 import "../styles/AboutMe.css"
-import photo from "/src/assets/photo.png"
+// import photo from "/src/assets/photo.png"
 
 
 export const AboutMe = () => {
@@ -8,11 +8,11 @@ export const AboutMe = () => {
         <header className="about">
             <div className="container">
                 <div className="img-container">
-                    <img    
+                    {/* <img    
                             className="photo"
                             src={photo}
                             alt="Alberto Adamuz Priego"
-                    />
+                    /> */}
                 </div>
                 <div className="info-container">
 
