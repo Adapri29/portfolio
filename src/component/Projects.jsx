@@ -1,6 +1,6 @@
 import "../styles/Projects.css"
 import { ProjectCard } from "./ProjectCard"
-import bioterrabot from "../assets/bioterrabot.png"
+import bioterrabot from "/src/assets/bioterrabot.png"
 export const Projects = () => {
   return (
     <section className="projects">
