@@ -1,6 +1,6 @@
 import "../styles/Projects.css"
 import { ProjectCard } from "./ProjectCard"
-// import bioterrabot from "/src/assets/bioterrabot.png"
+import bioterrabot from "/src/assets/bioterrabot.png"
 export const Projects = () => {
   return (
     <section className="projects">
@@ -11,7 +11,7 @@ export const Projects = () => {
                 <ProjectCard 
                   title="BioTerraBot"
                   description= "Robotización para el control de cubiertas vegetales en cultivos ecológicos."
-                  // image={bioterrabot}
+                  image={bioterrabot}
                   technologies={[
                     "https://www.ros.org/imgs/logo-white.png",
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
