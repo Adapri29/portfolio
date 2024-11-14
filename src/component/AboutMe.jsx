@@ -1,5 +1,5 @@
 import "../styles/AboutMe.css"
-import photo from "/src/assets/photo.png"
+import photo from "/photo.png"
 
 
 export const AboutMe = () => {
