@@ -1,5 +1,5 @@
 import "../styles/Contact.css"
-
+import 'boxicons'
 export const Contact = () => {
   return (
     <footer className="contact">
