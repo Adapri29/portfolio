@@ -6,7 +6,7 @@ import { Projects } from "./component/Projects";
 import { Skills } from "./component/Skills";
 
 function App() {
-
+  console.log("APP")
 
   return (
     <div className="app"> 
