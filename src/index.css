@@ -10,8 +10,8 @@
 }
 
 :root{
-  --bg-color: #080808;
-  --second-bg-color:#131313;
+  --bg-color: rgb(20, 20, 20);
+  --second-bg-color:rgb(8, 8, 8);
   --text-color:white;
   --main-color:rgb(186, 42, 42);
 }
@@ -32,7 +32,7 @@ body{
   left: 0;
   width: 100%;
   padding: 4rem 12% 4rem;
-  background: rgba(0,0,0,0.3);
+  background: rgba(8, 8, 8, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -367,7 +367,7 @@ span{
   padding: 1rem;
   border-radius: 1rem;
   border: 2px solid transparent;
-  background-color: #18181b;
+  background-color: var(--second-bg-color);
   transition: background-color 0.2s ease;
   overflow: hidden; /* Previene que contenido se desborde */
 }
@@ -393,7 +393,6 @@ span{
 .project-card-content {
   color: white;
   border-radius: 0 0 0.75rem 0.75rem;
-  background-color: #181818;
   padding: 1.5rem 1rem;
 }
 

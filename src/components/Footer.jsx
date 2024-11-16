@@ -13,7 +13,7 @@ const icons = [
 
 export const Footer = () => {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
         <LinkIcons icons={icons}/>
         <p className="copyright">
           © 2024 Alberto Adamuz Priego | Todos los Derechos Reservados
