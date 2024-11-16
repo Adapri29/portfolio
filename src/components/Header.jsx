@@ -1,11 +1,10 @@
 
-
 export const Header = () => {
   return (
     <header className="header">
-        <a href="#home" className="logo">Alberto <span>Adamuz</span></a>
+        <a href="#home" className="logo"><span>Adapri</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <i className='bx bx-menu' id="menu-icon"></i>
 
         <nav className="navbar">
           <a href="#home" className="active">Home</a>
