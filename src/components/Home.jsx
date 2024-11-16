@@ -1,15 +1,5 @@
+import { social_links } from "../models/data"
 import { LinkIcons } from "./LinkIcons"
-
-const icons = [
-    {
-        link:"https://www.linkedin.com/in/alberto-adamuz-priego-9b01b3276/",
-        icon: "bx bxl-linkedin"
-    },
-    {
-        link:"https://github.com/Adapri29/",
-        icon: "bx bxl-github"
-    }
-]
 
 export const Home = () => {
   return (
@@ -32,7 +22,7 @@ export const Home = () => {
                 <a href="#contact" className="btn">Contactar</a>
             </div>
 
-            <LinkIcons icons={icons}/>
+            <LinkIcons icons={social_links}/>
             
         </div>
     </section>

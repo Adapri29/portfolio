@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 
 export const LinkIcons = ({icons}) => {
-  console.log(icons)
   return (
     <div className="link-icons">
       {icons.map((icon)=>(
@@ -8,5 +8,14 @@ export const LinkIcons = ({icons}) => {
       ))}
         
     </div>
+  )
+}
+
+LinkIcons.propTypes = {
+  icons: PropTypes.arrayOf(
+    PropTypes.shape({
+      link:PropTypes.string,
+      icon:PropTypes.string.isRequired,
+    }).isRequired,
   )
 }
