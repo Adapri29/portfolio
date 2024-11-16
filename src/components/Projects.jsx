@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard"
 const projects = [
     {
         id: 1,
-        img: "/src/assets/bioterrabot.png",
+        img: "./src/assets/bioterrabot.png",
         title: "BioTerraBot",
         description: "Robotización para el control de cubiertas vegetales en cultivos ecológicos.",
         tags: ["Python", "ROS"],

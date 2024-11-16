@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <section className="home" id="home">
         <div className="home-img">
-            <img src="/src/assets/photo.png" atl=""/>
+            <img src="./src/assets/photo.png" atl=""/>
         </div>
         <div className="home-content">
             <h1>Hola, soy <span>Alberto</span></h1>
