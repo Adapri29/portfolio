@@ -103,7 +103,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
 }
 
 .home-content{
@@ -113,6 +113,7 @@ section{
   text-align: left;
   justify-content: center;
   margin-top: 3rem;
+  width: 50%;
 }
 
 span{
@@ -143,7 +144,7 @@ span{
 .home-img img{
   position: relative;
   top: 3rem;
-  width: 32vh;
+  width: 25vh;
   max-width: 300px;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);

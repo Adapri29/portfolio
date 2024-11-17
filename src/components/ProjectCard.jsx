@@ -19,11 +19,13 @@ export const ProjectCard = ({img, title, description, tags, codeLink="", infoLin
             <LinkIcons icons={[
                 {
                     link:codeLink,
-                    icon: "bx bxl-github"
+                    icon: "bx bxl-github",
+                    aria: "Código del proyecto"
                 },
                 {
                     link:infoLink,
-                    icon: "bx bx-info-circle"
+                    icon: "bx bx-info-circle",
+                    aria: "Información del proyecto"
                 }
             ]}/>
         </div>

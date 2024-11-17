@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <section className="home" id="home">
         <div className="home-img">
-            <img src="photo.png" atl=""/>
+            <img src="photo.webp" alt="Fotografía de Alberto"/>
         </div>
         <div className="home-content">
             <h1>Soy <span>Alberto</span></h1>

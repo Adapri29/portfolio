@@ -58,11 +58,13 @@ export const education = [
 export const social_links = [
     {
         link:"https://www.linkedin.com/in/alberto-adamuz-priego-9b01b3276/",
-        icon: "bx bxl-linkedin"
+        icon: "bx bxl-linkedin",
+        aria:"Visitar mi perfil de LinkedIn"
     },
     {
         link:"https://github.com/Adapri29/",
-        icon: "bx bxl-github"
+        icon: "bx bxl-github",
+        aria:"Visitar mi perfil de Github",
     }
 ]
 
