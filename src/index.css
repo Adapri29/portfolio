@@ -26,6 +26,22 @@ body{
   color: var(--text-color)
 }
 
+.cursor {
+  position: absolute;
+  width: 300px;  /* Hacer el círculo muy grande */
+  height: 300px; /* Tamaño grande */
+  border-radius: 50%; /* Redondeado */
+  background: rgba(186, 42, 42,0.2); /* Color oscuro, pero difuso */
+  pointer-events: none; /* Evita que interfiera con otros elementos */
+  transform: translate(-50%, -50%); /* Centra el círculo en el cursor */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Efecto difuso alrededor del círculo */
+  transition: width 0.2s, height 0.2s, background 0.3s; /* Efectos suaves */
+  z-index: 0;
+  filter: blur(70px);
+}
+
+
+
 .header{
   position: fixed;
   top: 0;
@@ -128,6 +144,7 @@ span{
   position: relative;
   top: 3rem;
   width: 32vh;
+  max-width: 300px;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -340,6 +357,7 @@ span{
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  background-color: var(--second-bg-color);
 }
 
 .projects h2{
@@ -348,6 +366,7 @@ span{
   font-weight: bold;
   color: white;
   margin: 1rem 0 2rem;
+  z-index: 1;
 }
 
 .projects-grid{
@@ -368,7 +387,7 @@ span{
   /* padding: 1rem; */
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
   transition: background-color 0.2s ease;
   overflow: hidden; /* Previene que contenido se desborde */
 }
@@ -456,7 +475,7 @@ span{
 
 
 .experience{
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 
 .experience h2{
@@ -465,22 +484,29 @@ span{
   font-weight: bold;
   color: white;
   margin: 1rem 0 2rem;
+  z-index: 1;
 
 }
 
 .experience .experience-container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-between; /* Alinea los divs a los extremos */
+  gap: 1rem
   
 }
 
-.experience .experience-container .experience-card{
+.experience .experience-container .employment, 
+.experience .experience-container .education
+{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.experience-card{
   display: flex;
   flex-direction: row;
-  width: 45%;
+  width: 90%;
   border-radius: 2rem;
   text-align: center;
   position: relative;
@@ -488,42 +514,44 @@ span{
   overflow: hidden;
   transition: 0.3s;
   padding: 1rem;
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   border: 1px solid var(--text-color);
 }
 
-.experience .experience-container .experience-card:hover{
+.experience-card:hover{
   transform: scale(1.03);
 }
 
-.experience .experience-container .experience-card .experience-img{
-  flex: 0 0 100px;
-  /* height: 70px;
-  width: 200px; */
+.experience-card .experience-img{
+  flex: 0 0 20vh;
+  height: 20vh;
+  width: 20vw;
+  background-color: white;
+  border-radius: 1.5rem;
 }
 
-.experience .experience-container .experience-card .experience-img img{
-  object-fit: cover;
+.experience-card .experience-img img{
+  object-fit: contain;
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
 }
 
 @media (max-width: 768px) {
-  .experience .experience-container .experience-card .experience-img {
+  .experience-card .experience-img {
     flex: 0 0 40px; /* Reduce tamaño para pantallas pequeñas */
     height: 40px;
     width: 40px;
   }
 
-  .experience .experience-container .experience-card .experience-img img {
+  .experience-card .experience-img img {
     max-height: 40px;
     max-width: 40px;
   }
 }
 
 
-.experience .experience-container .experience-card .experience-content{
+.experience-card .experience-content{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -533,7 +561,7 @@ span{
   align-items: left;
 }
 
-.experience .experience-container .experience-card .experience-content h3{
+.experience-card .experience-content h3{
   font-size: 2rem;
   color: var(--main-color);
   padding: 0.5rem 0;
@@ -542,14 +570,14 @@ span{
   margin-left: 1rem;
 }
 
-.experience .experience-container .experience-card .experience-content p{
+.experience-card .experience-content p{
   font-size: 1.5rem;
   text-align: left;
   margin-left: 1rem;
   color: var(--text-color);
 }
 
-.experience .experience-container .experience-card .experience-content h4{
+.experience-card .experience-content h4{
   font-size: 1.3rem;
   /* color: rgb(211, 208, 208); */
   padding: 0.5rem 0;

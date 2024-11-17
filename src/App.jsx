@@ -1,3 +1,4 @@
+import { Cursor } from "./components/Cursor"
 import { Experience } from "./components/Experience"
 import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
@@ -8,6 +9,7 @@ import { Projects } from "./components/Projects"
 function App() {
   return (
     <>
+      <Cursor />
       <Header />
       <Home />
       <Projects />

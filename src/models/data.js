@@ -18,7 +18,7 @@ export const projects = [
     },   
 ]
 
-export const experience = [
+export const employment = [
     {
         id: 1,
         company:"Fundación Cetemet",
@@ -34,6 +34,25 @@ export const experience = [
     //     endTime:2024,
     //     img:"https://pbs.twimg.com/profile_images/999258206646845440/oHDGfjVg_400x400.jpg",
     // },
+]
+
+export const education = [
+    {
+        id: 1,
+        institution:"Universidad de Córdoba",
+        study:"Grado en Ingeniería Informática",
+        startTime:2019,
+        endTime: 2023,
+        img:"https://yt3.googleusercontent.com/pqLGHS5fIIzqQznOWa7jMq7rNZZXvdOh_oKLhvdUOc_GfXRQjvtTZKRx-55J2d7PNLPoVpO9PA=s160-c-k-c0x00ffffff-no-rj",
+    },
+    {
+        id: 2,
+        institution:"Cambridge",
+        study:"Inglés B2",
+        startTime:2022,
+        endTime:2022,
+        img:"https://julioguerra.es/wp-content/uploads/2018/04/todo-sobre-examenes-cambridge.png",
+    },
 ]
 
 export const social_links = [
