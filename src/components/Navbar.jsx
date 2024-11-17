@@ -1,7 +1,7 @@
 import { useActiveSection } from "../hooks/useActiveSection"
 
-export const Navbar = ({renderLinks}) => {
-  const {activeSection} = useActiveSection({initialSection: "home"})
+export const Navbar = ({renderLinks, initialSection}) => {
+  const {activeSection} = useActiveSection({initialSection: initialSection})
   return (
     <nav className="navbar">
       {renderLinks(activeSection)}

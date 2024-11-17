@@ -15,8 +15,25 @@ export const projects = [
         description: "Sistema inteligente para atención de personas mayores y dependientes.",
         tags: ["Python", "Machine Learning"],
         infoLink:"https://ambitcluster.org/es/area-de-innovacion/proyectos/3078-siapemad",
+    },   
+]
+
+export const experience = [
+    {
+        id: 1,
+        company:"Fundación Cetemet",
+        role:"Ingeniero I+D+i",
+        startTime:2023,
+        img:"https://pbs.twimg.com/profile_images/999258206646845440/oHDGfjVg_400x400.jpg",
     },
-    
+    // {
+    //     id: 2,
+    //     company:"Prueba",
+    //     role:"Ingeniero I+D+i",
+    //     startTime:2023,
+    //     endTime:2024,
+    //     img:"https://pbs.twimg.com/profile_images/999258206646845440/oHDGfjVg_400x400.jpg",
+    // },
 ]
 
 export const social_links = [

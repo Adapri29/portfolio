@@ -16,7 +16,7 @@ export const Footer = () => {
     <footer className="footer">
         <LinkIcons icons={icons}/>
         <p className="copyright">
-          © 2024 Alberto Adamuz Priego | Todos los Derechos Reservados
+          2024 Alberto Adamuz Priego
         </p>
     </footer>
   )

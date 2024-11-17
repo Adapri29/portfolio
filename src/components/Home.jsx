@@ -8,8 +8,8 @@ export const Home = () => {
             <img src="photo.png" atl=""/>
         </div>
         <div className="home-content">
-            <h1>Hola, soy <span>Alberto</span></h1>
-            <h2 className="text-animation">Soy <span></span></h2>
+            <h1>Soy <span>Alberto</span></h1>
+            <h2 className="text-animation"><span></span></h2>
             <p>
                 Ingeniero informático, 
                 curioso y abierto a nuevos desafíos. 
